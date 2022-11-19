@@ -12,7 +12,12 @@ class Solution:
                 result = left
         return result
     
-""" Time Complex is O(log n), Space Complex is ? """ 
+""" Time Complex is O(log n), Space Complex is ?
+
+    Label : Binary Search, Interactive
+""" 
+
+
 
 # class Solution:
 #     def __init__(self):

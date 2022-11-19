@@ -2,6 +2,8 @@
 """
     自己的解法 -> 成功 , 希望在更快一點
     O(m+n) Time Complexity, O(1) Space Complexity
+
+    Label : Hash Table, String
 """
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
@@ -32,20 +34,20 @@ Now we will iterate through each character of ransomNote and if the character is
 then we will decrement that character from dictionary. If there are any character in ransomNote that is not present in magDict 
 then we will return False. Otherwise return True."""
 
-# class Solution:
-#     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-#         magDict = {}
-#         for i in magazine:
-#             if i in magDict:
-#                 magDict[i] +=1
-#             else:
-#                 magDict[i] = 1
-#         for j in ransomNote:
-#             if magDict.get(j) and magDict[j]>0:
-#                 magDict[j] -=1
-#             else:
-#                 return False
-#         return True
+class Solution:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        magDict = {}
+        for i in magazine:
+            if i in magDict:
+                magDict[i] +=1
+            else:
+                magDict[i] = 1
+        for j in ransomNote:
+            if magDict.get(j) and magDict[j]>0:
+                magDict[j] -=1
+            else:
+                return False
+        return True
 
 
 
