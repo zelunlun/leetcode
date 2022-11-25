@@ -28,4 +28,4 @@ class Solution:
 if __name__ == '__main__':
     ans = Solution()
     datas = [1,2,3,4,5]
-    for data in datas:
+    # for data in datas:
