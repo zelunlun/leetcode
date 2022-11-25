@@ -17,5 +17,5 @@ class Solution:
 
 if __name__ == '__main__':
     ans = Solution()
-    answer = ans.addBinary("11","1")
+    answer = ans.addBinary("11000000011111100101","11000000011111100101")
     print(answer)
