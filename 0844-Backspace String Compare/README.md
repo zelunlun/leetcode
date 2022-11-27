@@ -28,6 +28,8 @@ class Solution:
     > Space Complexity: **O(1)**  
     > 類型：由右往左Index  
 
+    > 每個單字每個單字做比對，如果遇到不一樣的就回傳  
+    > **很神！**  
 ```python
 class Solution(object):
     def backspaceCompare(self, S1, S2):
