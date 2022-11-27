@@ -1,26 +1,21 @@
 class Solution:
-    def backspaceCompare(self, s: str, t: str) -> bool:
-        behind = 0
-        forward = 1
-        forward_stack = []
-        behind_stack = []
-        t_stack = []
-        s = s + "0"
-        while behind < len(s):
-            # print(s[behind]
-            if s[forward] == '0':
-                break
-            if s[forward] == '#':
-                forward_stack.append(s[behind])
+    def backspaceCompare(self, S, T):
+        result_S = self.stack(S, [])
+        result_T = self.stack(T, [])
+        return result_S == result_T
+
+    def stack(self, S, stack):
+        for char in S:
+            if char != "#":
+                stack.append(char)
             else:
-                behind_stack.append(s[forward])
-            behind += 1
-            forward += 1
-        
-        return forward_stack[:], behind_stack[:]
+                if not stack:
+                    continue
+                stack.pop()
+        return stack
 
 
 if __name__ == "__main__":
     ans = Solution()
-    result = ans.backspaceCompare("ab#c", "ad#c")
+    result = ans.backspaceCompare("ab###", "c#d##")
     print(result)
