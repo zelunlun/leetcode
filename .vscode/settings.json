@@ -1,6 +1,4 @@
 {
-    "workbench.colorTheme": "Monokai",
-    "workbench.preferredDarkColorTheme": "Default Dark+",
     "workbench.iconTheme": "vs-seti",
     "code-runner.executorMap": {
         "python": "python"

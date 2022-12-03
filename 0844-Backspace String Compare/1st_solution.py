@@ -41,7 +41,10 @@ class Solution(object):
             r -= 1
         return char, r
 
+import math
+
 if __name__ == "__main__":
     ans = Solution()
     result = ans.backspaceCompare("xywrrmp","xywrrm#p")
-    print(result)
+    # print(result)
+    print(type(math.inf))    
